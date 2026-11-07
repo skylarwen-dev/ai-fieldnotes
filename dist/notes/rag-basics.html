@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="理解檢索與生成如何合作，也理解為什麼找到資料不等於答對問題。">
+  <meta name="theme-color" content="#172e2b">
+  <title>RAG：先翻筆記，再回答問題 · AI FIELDNOTES</title>
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">跳到主要內容</a>
+  <header class="site-header"><a class="brand" href="../index.html"><span class="brand-icon" aria-hidden="true">✳</span><span>AI FIELDNOTES<small>生成式 AI 學習手札</small></span></a><nav aria-label="主要導覽"><a href="../index.html#notes">探索筆記</a><a href="../about.html">關於與協作規則 <span aria-hidden="true">↗</span></a></nav></header>
+  <main id="main"><div class="breadcrumb"><a href="../index.html#notes">所有筆記</a> / 知識整理</div><div class="article-layout"><article class="article"><div class="meta"><span class="tag">知識整理</span><span>入門 · 5 分鐘</span><time datetime="2026-11-07">更新 2026-11-07</time></div><h1>RAG：先翻筆記，再回答問題</h1><p class="lead">理解檢索與生成如何合作，也理解為什麼找到資料不等於答對問題。</p><div class="takeaway"><small>ONE THING TO REMEMBER</small><p>把資料找回來只是第一步，答案還需要能對應到來源。</p></div><section id="section-1"><h2>核心概念</h2><p>RAG 把外部資料檢索與文字生成結合。原始研究結合參數記憶與非參數記憶；在學習筆記的情境中，可以把它理解成先找出相關段落，再把段落作為回答時的參考。這個比喻簡化了研究中的模型設計。</p></section><section id="section-2"><h2>實作範例</h2><p>假設有一份自己撰寫的社團活動規則。問題是「活動最晚何時報名？」系統應先找到報名期限段落，再引用該段回答；如果文件沒有日期，應說資料不足。</p><div class="code-head"><span>EXAMPLE / 原創示範</span><button class="copy" type="button" data-copy="example-1" aria-live="polite">複製範例</button></div><pre id="example-1"><code>問題 → 搜尋相關段落 → 將段落與問題交給模型
+     → 生成附來源的答案 → 人工核對來源是否支持答案</code></pre></section><section id="section-3"><h2>常見誤區</h2><p>RAG 不等於把整個網站永久訓練進模型，也不能消除所有錯誤。檢索找錯段落、文件過期、模型誤讀，都可能讓答案失準。本站是靜態筆記網站，沒有提供實際的 RAG 問答後端。</p></section><section id="section-4"><h2>動手練習</h2><p>準備一份自己的短文件，設計一題文件能回答、一題要結合兩段、一題文件完全沒寫的問題。檢查回答是否引用正確段落，以及資料不足時是否明確說明。</p></section><div class="sources"><h2>參考與來源</h2><ul><li><a href="https://arxiv.org/abs/2005.11401" target="_blank" rel="noopener noreferrer">Lewis 等，Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks（2020） ↗</a></li></ul><p>文字為學習用途的整理與自擬範例；研究細節以原始來源為準。</p></div><div class="related"><h2>接著讀</h2><a href="./prompt-design.html">讓提示詞從願望變成規格 ↗</a><a href="./evaluation-checklist.html">生成之後：一份能重複使用的檢查表 ↗</a></div></article><aside class="sidebar" aria-label="文章目錄"><div class="sticky"><h2>ON THIS PAGE</h2><a href="#section-1">01　核心概念</a><a href="#section-2">02　實作範例</a><a href="#section-3">03　常見誤區</a><a href="#section-4">04　動手練習</a><p class="side-note">先理解，再實作。<br>把自己的觀察留下來，才是下一篇筆記的開始。</p><a href="../index.html#notes">← 回到筆記列表</a></div></aside></div></main>
+  <footer><a class="footer-brand" href="../index.html">✳ AI FIELDNOTES</a><span>把概念寫清楚，把學習繼續下去。</span><a href="../AGENTS.md">閱讀 AGENTS.md ↗</a></footer>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="了解 AI FIELDNOTES 如何透過 AGENTS.md 與資料範本持續新增筆記。">
+  <meta name="theme-color" content="#172e2b">
+  <title>關於與協作規則 · AI FIELDNOTES</title>
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./assets/style.css">
+  <script src="./assets/app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">跳到主要內容</a>
+  <header class="site-header"><a class="brand" href="./index.html"><span class="brand-icon" aria-hidden="true">✳</span><span>AI FIELDNOTES<small>生成式 AI 學習手札</small></span></a><nav aria-label="主要導覽"><a href="./index.html#notes">探索筆記</a><a href="./about.html">關於與協作規則 <span aria-hidden="true">↗</span></a></nav></header>
+  <main id="main"><article class="about"><div class="eyebrow">ABOUT THIS NOTEBOOK</div><h1>網站會完成，<br>學習可以繼續。</h1><p>AI FIELDNOTES 是「生成式 AI：文字與圖像生成的原理與實務」第九週的小專案：把概念、實作範例與練習整理成能持續擴充的主題筆記網站。</p><div class="note-callout">本網站的重點除了網頁本身，也包含讓下一位 AI 理解專案的 <a href="./AGENTS.md">AGENTS.md</a>。所有練習均為建議活動，未執行的活動不會被標示為實測成果。</div><h2>一本手札，三條路徑</h2><p>文字生成：把提示詞與模型概念說清楚。圖像生成：把畫面描述與生成原理連起來。知識整理：讓資料來源、檢索與檢查形成可追溯的流程。</p><h2>如何讓 AI 繼續新增一篇？</h2><ol class="steps"><li><span>先讀 <a href="./AGENTS.md">AGENTS.md</a>，確認目的、視覺規範、檔案位置與驗收規則。</span></li><li><span>複製 <a href="./note-template.json">文章資料範本</a>，新增到 <code>content/notes.json</code>。每篇固定包含核心概念、實作範例、常見誤區、動手練習。</span></li><li><span>填寫唯一的英文 slug、摘要、分類、更新日期、來源與相關文章；查證技術敘述，標明自擬情境。</span></li><li><span>執行 <code>npm run build</code> 與 <code>npm run check</code>。系統自動產生文章頁、首頁卡片與搜尋資料，保留一致外觀。</span></li><li><span>在桌面與窄螢幕檢查導覽和閱讀，再將變更推送 GitHub；Pages 工作流程重新建置與發布。</span></li></ol><h2>為什麼可以重複使用？</h2><p>內容、版型與樣式分開管理：文章寫在 JSON，頁面共用 HTML 範本，色彩與斷點集中在 CSS。新增內容時不必重新手寫首頁與文章頁，也能避免不同文章的格式逐漸失去一致性。</p><h2>協作與來源說明</h2><p>本專案由使用者提出作業需求，透過 AI 協作建立規則、程式與筆記初稿。技術概念附原始論文；提示詞、畫面簡報與檢查表為本專案自擬範例。網站未使用課程講義的整頁重製內容，也沒有冒稱個人實測或學習心得。</p><p>這是靜態筆記網站，不需要登入、API 金鑰或付費服務；搜尋在瀏覽器中執行，沒有將搜尋內容送往遠端問答系統。</p><a class="primary" href="./index.html#notes">開始閱讀筆記 ↗</a></article></main>
+  <footer><a class="footer-brand" href="./index.html">✳ AI FIELDNOTES</a><span>把概念寫清楚，把學習繼續下去。</span><a href="./AGENTS.md">閱讀 AGENTS.md ↗</a></footer>
+</body>
+</html>

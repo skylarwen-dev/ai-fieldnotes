@@ -1,0 +1,8 @@
+{
+  "name": "ai-fieldnotes",
+  "version": "1.0.0",
+  "private": true,
+  "description": "生成式 AI 學習筆記與可延伸的 AI 協作規則",
+  "scripts": { "build": "node scripts/build.mjs", "check": "node scripts/check.mjs", "start": "node scripts/serve.mjs" },
+  "engines": { "node": ">=20" }
+}

@@ -1,0 +1,12 @@
+{
+  "slug": "new-topic", "title": "請填寫文章標題", "category": "知識整理", "level": "入門", "minutes": 4, "date": "2026-11-07",
+  "summary": "請填寫一句摘要", "takeaway": "請填寫最重要的一句話",
+  "sections": [
+    {"heading": "核心概念", "body": "用自己的話介紹概念與適用範圍。"},
+    {"heading": "實作範例", "body": "標明這是原創示範或已執行的實測。", "code": "可重複使用的提示詞或流程"},
+    {"heading": "常見誤區", "body": "說明限制以及容易混淆之處。"},
+    {"heading": "動手練習", "body": "提出能操作的任務與檢查方式。"}
+  ],
+  "sources": [{"title": "請填寫原始來源標題與年份；自擬方法請明確標示本站原創", "url": ""}],
+  "related": ["prompt-design"]
+}

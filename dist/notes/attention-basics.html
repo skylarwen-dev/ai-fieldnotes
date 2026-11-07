@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="用一句話的關係，認識 Transformer 中注意力機制的基本想法。">
+  <meta name="theme-color" content="#172e2b">
+  <title>Attention：讓詞語看見彼此 · AI FIELDNOTES</title>
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">跳到主要內容</a>
+  <header class="site-header"><a class="brand" href="../index.html"><span class="brand-icon" aria-hidden="true">✳</span><span>AI FIELDNOTES<small>生成式 AI 學習手札</small></span></a><nav aria-label="主要導覽"><a href="../index.html#notes">探索筆記</a><a href="../about.html">關於與協作規則 <span aria-hidden="true">↗</span></a></nav></header>
+  <main id="main"><div class="breadcrumb"><a href="../index.html#notes">所有筆記</a> / 文字生成</div><div class="article-layout"><article class="article"><div class="meta"><span class="tag">文字生成</span><span>概念 · 4 分鐘</span><time datetime="2026-11-07">更新 2026-11-07</time></div><h1>Attention：讓詞語看見彼此</h1><p class="lead">用一句話的關係，認識 Transformer 中注意力機制的基本想法。</p><div class="takeaway"><small>ONE THING TO REMEMBER</small><p>注意力會依輸入內容計算不同位置之間的關聯，協助建立表示。</p></div><section id="section-1"><h2>核心概念</h2><p>Transformer 是以注意力機制為核心的序列模型架構。自注意力讓序列中的位置參考其他位置的資訊。把它想成閱讀時把相關線索連起來，可以作為入門比喻，但模型的計算方式並不等於人類的理解。</p></section><section id="section-2"><h2>實作範例</h2><p>閱讀「小明把書交給小華，因為他要準備報告」。想知道「他」指誰，往往需要更多上下文。這個自擬例子說明文字關係的重要性，並不是任何模型注意力權重的實測結果。</p><div class="code-head"><span>EXAMPLE / 原創示範</span><button class="copy" type="button" data-copy="example-1" aria-live="polite">複製範例</button></div><pre id="example-1"><code>詞語的表示 → 查詢、鍵、值
+查詢與鍵計算關聯 → 加權整合值 → 更新表示</code></pre></section><section id="section-3"><h2>常見誤區</h2><p>注意力分數不應直接當成完整的推理說明。知道模型會使用上下文，也不代表模型對事實與指涉一定判斷正確。</p></section><section id="section-4"><h2>動手練習</h2><p>自己寫出三句有代名詞歧義的句子，再補上一句背景。比較背景是否讓指涉更清楚，並記錄仍然可能出現的不同解讀。</p></section><div class="sources"><h2>參考與來源</h2><ul><li><a href="https://arxiv.org/abs/1706.03762" target="_blank" rel="noopener noreferrer">Vaswani 等，Attention Is All You Need（2017） ↗</a></li></ul><p>文字為學習用途的整理與自擬範例；研究細節以原始來源為準。</p></div><div class="related"><h2>接著讀</h2><a href="./prompt-design.html">讓提示詞從願望變成規格 ↗</a><a href="./rag-basics.html">RAG：先翻筆記，再回答問題 ↗</a></div></article><aside class="sidebar" aria-label="文章目錄"><div class="sticky"><h2>ON THIS PAGE</h2><a href="#section-1">01　核心概念</a><a href="#section-2">02　實作範例</a><a href="#section-3">03　常見誤區</a><a href="#section-4">04　動手練習</a><p class="side-note">先理解，再實作。<br>把自己的觀察留下來，才是下一篇筆記的開始。</p><a href="../index.html#notes">← 回到筆記列表</a></div></aside></div></main>
+  <footer><a class="footer-brand" href="../index.html">✳ AI FIELDNOTES</a><span>把概念寫清楚，把學習繼續下去。</span><a href="../AGENTS.md">閱讀 AGENTS.md ↗</a></footer>
+</body>
+</html>

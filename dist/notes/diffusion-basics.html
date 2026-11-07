@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="認識逐步去噪的想法，以及潛在擴散為什麼選擇在壓縮表示中運作。">
+  <meta name="theme-color" content="#172e2b">
+  <title>擴散模型：從雜訊走向畫面 · AI FIELDNOTES</title>
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">跳到主要內容</a>
+  <header class="site-header"><a class="brand" href="../index.html"><span class="brand-icon" aria-hidden="true">✳</span><span>AI FIELDNOTES<small>生成式 AI 學習手札</small></span></a><nav aria-label="主要導覽"><a href="../index.html#notes">探索筆記</a><a href="../about.html">關於與協作規則 <span aria-hidden="true">↗</span></a></nav></header>
+  <main id="main"><div class="breadcrumb"><a href="../index.html#notes">所有筆記</a> / 圖像生成</div><div class="article-layout"><article class="article"><div class="meta"><span class="tag">圖像生成</span><span>概念 · 5 分鐘</span><time datetime="2026-11-07">更新 2026-11-07</time></div><h1>擴散模型：從雜訊走向畫面</h1><p class="lead">認識逐步去噪的想法，以及潛在擴散為什麼選擇在壓縮表示中運作。</p><div class="takeaway"><small>ONE THING TO REMEMBER</small><p>潛在擴散在壓縮後的表示上執行生成，再將結果解碼成圖像。</p></div><section id="section-1"><h2>核心概念</h2><p>擴散模型學習去噪，生成時可以從雜訊逐步形成結果。潛在擴散模型把這個過程移到預訓練自編碼器的潛在空間，以降低直接在像素空間運算的成本。這裡是概念整理，並非完整訓練流程。</p></section><section id="section-2"><h2>實作範例</h2><p>可把壓縮表示想成畫面的精簡草稿，但它實際上是模型學到的數值表示，不是人類能直接閱讀的縮圖。文字等條件能引導生成內容。</p><div class="code-head"><span>EXAMPLE / 原創示範</span><button class="copy" type="button" data-copy="example-1" aria-live="polite">複製範例</button></div><pre id="example-1"><code>文字條件 + 潛在雜訊 → 多步去噪 → 潛在表示 → 解碼成圖像</code></pre></section><section id="section-3"><h2>常見誤區</h2><p>不是所有圖像生成系統都使用相同架構，也不能只憑生成畫面就推斷其訓練資料。去噪步數與品質的關係還會受到模型及採樣方法影響。</p></section><section id="section-4"><h2>動手練習</h2><p>畫一張流程圖，把雜訊、條件、去噪與解碼四個角色標清楚，再用自己的話說明「潛在」與「像素」空間的差異。</p></section><div class="sources"><h2>參考與來源</h2><ul><li><a href="https://arxiv.org/abs/2112.10752" target="_blank" rel="noopener noreferrer">Rombach 等，High-Resolution Image Synthesis with Latent Diffusion Models（2022） ↗</a></li></ul><p>文字為學習用途的整理與自擬範例；研究細節以原始來源為準。</p></div><div class="related"><h2>接著讀</h2><a href="./image-brief.html">圖像生成之前，先寫好畫面簡報 ↗</a><a href="./attention-basics.html">Attention：讓詞語看見彼此 ↗</a></div></article><aside class="sidebar" aria-label="文章目錄"><div class="sticky"><h2>ON THIS PAGE</h2><a href="#section-1">01　核心概念</a><a href="#section-2">02　實作範例</a><a href="#section-3">03　常見誤區</a><a href="#section-4">04　動手練習</a><p class="side-note">先理解，再實作。<br>把自己的觀察留下來，才是下一篇筆記的開始。</p><a href="../index.html#notes">← 回到筆記列表</a></div></aside></div></main>
+  <footer><a class="footer-brand" href="../index.html">✳ AI FIELDNOTES</a><span>把概念寫清楚，把學習繼續下去。</span><a href="../AGENTS.md">閱讀 AGENTS.md ↗</a></footer>
+</body>
+</html>
